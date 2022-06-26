@@ -11,6 +11,9 @@
   </head>
 
   <body>
+    <% if flash[:notice] %>
+      <p>Hey! This is the notice: <%= flash[:notice] %></p>
+    <% end %>
     <%= yield %>
   </body>
 </html>
